@@ -10,7 +10,7 @@ import (
 func main() {
 	// 1. Define the Home Route
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "This is a simple Go web server running in a Docker container on ecs")
+		fmt.Fprintf(w, "This is a simple Go web server running in a Docker container on ecs v2")
 	})
 
 	// 2. Define a Health Check (Crucial for Docker/AWS)
